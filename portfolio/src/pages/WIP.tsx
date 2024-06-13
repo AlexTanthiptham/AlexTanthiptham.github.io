@@ -1,8 +1,8 @@
 import React from "react";
 import roadworks from "../assets/roadworks.png";
-import "./Home.css";
+import "./WIP.css";
 
-const Home = () => {
+const WIP = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -14,7 +14,7 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default WIP;
 
 // <div className="App">
 // <header className="App-header">

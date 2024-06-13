@@ -1,7 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import React from "react";
 import "./App.css";
-import Home from "./pages/Home";
+import WIP from "./pages/WIP";
+import Landing from "./pages/Landing";
 
 // const TopNav = () => (
 //   <nav>
@@ -19,8 +20,8 @@ import Home from "./pages/Home";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />,
-      <Route path="/Home" element={<Home />} />,
+      <Route path="/" element={<WIP />} />,
+      <Route path="/Home" element={<Landing />} />
     </Routes>
   );
 }
