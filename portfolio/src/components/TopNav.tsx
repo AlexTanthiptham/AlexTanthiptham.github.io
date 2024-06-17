@@ -4,6 +4,7 @@ import {
   Box,
   Button,
   Container,
+  IconButton,
   Toolbar,
   Typography,
 } from "@mui/material";
@@ -11,7 +12,27 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { LinkedIn, GitHub } from "@mui/icons-material";
 
-const pages = ["About", "Projects", "Contact", "Blog"];
+/* TODO: 
+  - Implement responsive appbar (hamburger menu -> modal for xs screens)
+  - Implement dynamically generated nav buttons
+    - NOTE: Need to find a way to manage the fact that some links are to sections
+      on the same page, while others are to different pages when assigning hrefs
+*/
+
+// // WIP CODE
+// const pages = ["About", "Projects", "Contact", "Blog"];
+//
+// {pages.map((page) => (
+//   <Button
+//     key={page}
+//     component={Typography}
+//     href={page}
+//     variant="text"
+//     color="inherit"
+//     className="navButton">
+//       {page}
+//   </Button>
+// ))}
 
 const TopNav = () => {
   return (
@@ -44,14 +65,16 @@ const TopNav = () => {
                 textDecoration: "none",
               },
               flexGrow: 0,
-              display: { xs: "none", md: "flex" },
+              alignItems: "center",
+              gap: 2,
+              display: { xs: "flex", md: "flex" },
             }}
           >
             <Typography
               variant="h6"
               noWrap
               component="a"
-              href="#about"
+              href="/Home#about"
               color="inherit"
               className="navButton"
             >
@@ -61,7 +84,7 @@ const TopNav = () => {
               variant="h6"
               noWrap
               component="a"
-              href="/blog"
+              href="/Home#projects"
               color="inherit"
               className="navButton"
             >
@@ -71,7 +94,7 @@ const TopNav = () => {
               variant="h6"
               noWrap
               component="a"
-              href="/blog"
+              href="/Home#contact"
               color="inherit"
               className="navButton"
             >
@@ -87,8 +110,18 @@ const TopNav = () => {
             >
               Blog
             </Typography>
-            <LinkedIn sx={{ color: "primary.contrastText" }}></LinkedIn>
-            <GitHub sx={{ color: "primary.contrastText" }}> </GitHub>
+            <IconButton
+              component="a"
+              href="https://www.linkedin.com/in/alex-tanth/"
+            >
+              <LinkedIn sx={{ color: "primary.contrastText" }} />
+            </IconButton>
+            <IconButton
+              component="a"
+              href="https://github.com/AlexTanthiptham/"
+            >
+              <GitHub sx={{ color: "primary.contrastText" }} />
+            </IconButton>
           </Box>
         </Toolbar>
       </Container>
