@@ -12,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<WIP />} />,
         <Route path="/Home" element={<Landing />} />
+        <Route path="/Blog" element={<WIP />} />
       </Routes>
     </div>
   );

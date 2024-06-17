@@ -7,7 +7,7 @@ const WIP = () => {
     <div className="App">
       <header className="App-header">
         <img src={roadworks} className="App-logo" alt="logo" />
-        <p>⚠️ This site is currently under construction! ⚠️</p>
+        <p>⚠️ This page is currently under construction! ⚠️</p>
         <p>Please check back later!</p>
       </header>
     </div>
