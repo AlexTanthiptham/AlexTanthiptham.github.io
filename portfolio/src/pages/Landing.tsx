@@ -1,6 +1,13 @@
+/*
+Get all the functionality in first, make it pretty later. 
+Just get everything in the right place first.
+
+
+*/
+
 import React from "react";
 import "./Landing.css";
-import { AppBar, Box, Button, Container, Grid } from "@mui/material";
+import { Box, Button, Container, Grid } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import profile from "../assets/profile.jpg";
 const Landing = () => {
