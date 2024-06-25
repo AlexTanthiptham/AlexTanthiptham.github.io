@@ -2,14 +2,11 @@ import "./TopNav.css";
 import {
   AppBar,
   Box,
-  Button,
   Container,
   IconButton,
   Toolbar,
   Typography,
 } from "@mui/material";
-import React from "react";
-import { Link } from "react-router-dom";
 import { LinkedIn, GitHub } from "@mui/icons-material";
 
 /* TODO: 
@@ -20,7 +17,7 @@ import { LinkedIn, GitHub } from "@mui/icons-material";
 */
 
 // // WIP CODE
-// const pages = ["About", "Projects", "Contact", "Blog"];
+// const pages = ["About", "Projects", "Contact", "Etc."];
 //
 // {pages.map((page) => (
 //   <Button
@@ -74,11 +71,11 @@ const TopNav = () => {
               variant="h6"
               noWrap
               component="a"
-              href="/Home#about"
+              href="/Home#experience"
               color="inherit"
               className="navButton"
             >
-              About
+              Experience
             </Typography>
             <Typography
               variant="h6"
@@ -108,7 +105,7 @@ const TopNav = () => {
               color="inherit"
               className="navButton"
             >
-              Blog
+              Etc.
             </Typography>
             <IconButton
               component="a"
