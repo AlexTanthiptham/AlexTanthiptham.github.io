@@ -27,8 +27,6 @@ const Landing = () => {
   return (
     <Container
       id="landing"
-      maxWidth={false}
-      disableGutters
       sx={{
         ".textBold": {
           color: "primary.contrastText",
@@ -65,7 +63,6 @@ const Landing = () => {
         },
       }}
     >
-      <div> HELLOWORLD TEST</div>
       <Container
         id="about"
         maxWidth="lg"
@@ -193,12 +190,10 @@ const Landing = () => {
         </Box>
       </Container>
 
-      <Container id="projects" maxWidth={false} disableGutters>
-        <Container id="projects" maxWidth="lg">
-          <Typography variant="h3" className="sectionHeader">
-            Projects
-          </Typography>
-        </Container>
+      <Container id="projects" maxWidth="lg">
+        <Typography variant="h3" className="sectionHeader">
+          Projects
+        </Typography>
         <Grid
           container
           spacing={0}
