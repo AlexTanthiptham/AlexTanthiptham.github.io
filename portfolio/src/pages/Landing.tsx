@@ -6,6 +6,7 @@ import {
   Container,
   Divider,
   Grid,
+  TextField,
   Typography,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
@@ -13,14 +14,9 @@ import { useTheme } from "@mui/material/styles";
 // TODO: Clean up image imports
 import profile from "../assets/profile.jpg";
 import projectBiped from "../assets/project-icons/project-biped.png";
-import projectGemev from "../assets/project-icons/project-gemev.png";
+import projectGemev from "../assets/project-icons/project-gemev.jpg";
 import projectTagAlong from "../assets/project-icons/project-tagalong.png";
 import projectVisat from "../assets/project-icons/project-visat.png";
-
-/* TODO:
-  - Revise to use MUI components for typographys and images
-
-*/
 
 const Landing = () => {
   const theme = useTheme();
@@ -226,13 +222,34 @@ const Landing = () => {
             </Box>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
-            {" "}
+            <Box className="projectContainer">
+              <Box
+                component="img"
+                src={projectGemev}
+                alt={"GemEV"}
+                className="projectImage"
+              />
+            </Box>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
-            {" "}
+            <Box className="projectContainer">
+              <Box
+                component="img"
+                src={projectTagAlong}
+                alt={"GemEV"}
+                className="projectImage"
+              />
+            </Box>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
-            {" "}
+            <Box className="projectContainer">
+              <Box
+                component="img"
+                src={projectVisat}
+                alt={"GemEV"}
+                className="projectImage"
+              />
+            </Box>
           </Grid>
         </Grid>
       </Container>
@@ -240,6 +257,24 @@ const Landing = () => {
       <Container id="contact" maxWidth="lg" className="stackedText">
         <Typography variant="h3" className="sectionHeader">
           Contact
+        </Typography>
+        <Typography variant="body1" className="sectionHeader" align="center">
+          Let's talk! I'm reachable at jt20@illinois.edu or through the form
+          below
+        </Typography>
+        <TextField id="contact-name" label="Name" variant="outlined" />
+        <TextField id="contact-email" label="Email" variant="outlined" />
+        <TextField id="contact-send" label="Message" variant="outlined" />
+        <Button id="contact-submit" variant="contained">
+          {" "}
+          Submit{" "}
+        </Button>
+      </Container>
+
+      <Container className="footer">
+        <Divider />
+        <Typography variant="body1" className="sectionHeader" align="center">
+          Designed by Alex Tanthiptham © 2024
         </Typography>
       </Container>
     </Container>
