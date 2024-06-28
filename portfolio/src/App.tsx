@@ -3,12 +3,12 @@ import React from "react";
 import "./App.css";
 import WIP from "./pages/WIP";
 import Landing from "./pages/Landing";
-import TopNav from "./components/TopNav";
+import UtilsTopNav from "./components/UtilsTopNav";
 
 function App() {
   return (
     <div>
-      <TopNav />
+      <UtilsTopNav />
       <Routes>
         <Route path="/" element={<WIP />} />,
         <Route path="/Home" element={<Landing />} />

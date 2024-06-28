@@ -1,9 +1,14 @@
-import { createTheme } from "@mui/material/styles";
+import { Box } from "@mui/material";
 
-const theme = createTheme({
-  components: {
-    MuiCssBaseline: {
-      styleOverrides: {
+interface StyleWrapperProps {
+  children: React.ReactNode;
+}
+
+const StyleWrapper: React.FC<StyleWrapperProps> = ({ children }) => {
+  return (
+    <Box
+      id="landing"
+      sx={{
         ".textBold": {
           color: "primary.contrastText",
           margin: "0px 5px",
@@ -34,41 +39,11 @@ const theme = createTheme({
             paddingBottom: 1,
           },
         },
-      },
-    },
-  },
+      }}
+    >
+      {children}
+    </Box>
+  );
+};
 
-  palette: {
-    primary: {
-      main: "#FFFFFF",
-      contrastText: "#363B48",
-    },
-    secondary: {
-      main: "#FF0000",
-      contrastText: "#FFFFFF",
-    },
-    warning: {
-      main: "#E3D026",
-      light: "#E9DB5D",
-      dark: "#A29415",
-      contrastText: "#242105",
-    },
-  },
-});
-
-export default theme;
-
-// TODO: Implement light/dark mode themes and context for swapping themes
-
-// const themeLight = createTheme({
-//   palette: {
-//     mode: 'light',
-
-//   },
-// });
-
-// const themeDark = createTheme({
-//   palette: {
-//     mode: 'dark',
-//   },
-// });
+export default StyleWrapper;

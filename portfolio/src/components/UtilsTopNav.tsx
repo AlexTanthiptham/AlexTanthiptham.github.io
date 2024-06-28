@@ -1,4 +1,4 @@
-import "./TopNav.css";
+import "./UtilsTopNav.css";
 import {
   AppBar,
   Box,
@@ -31,7 +31,7 @@ import { LinkedIn, GitHub } from "@mui/icons-material";
 //   </Button>
 // ))}
 
-const TopNav = () => {
+const UtilsTopNav = () => {
   return (
     <AppBar position="static" color="primary" elevation={0}>
       <Container maxWidth="xl">
@@ -126,4 +126,4 @@ const TopNav = () => {
   );
 };
 
-export default TopNav;
+export default UtilsTopNav;
