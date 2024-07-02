@@ -10,22 +10,22 @@ const StyleWrapper: React.FC<StyleWrapperProps> = ({ children }) => {
       id="landing"
       sx={{
         ".textBold": {
-          color: "primary.contrastText",
-          margin: "0px 5px",
           fontWeight: 600,
-          textDecoration: "none",
         },
         ".textRegular": {
-          color: "primary.contrastText",
-          margin: "0px 5px",
           fontWeight: 400,
-          textDecoration: "none",
         },
         ".textInika": {
+          color: "primary.contrastText",
           fontFamily: "Inika",
+          textDecoration: "none",
+          margin: "0px 5px",
         },
         ".textItaliana": {
+          color: "primary.contrastText",
           fontFamily: "Italiana",
+          textDecoration: "none",
+          margin: "0px 5px",
         },
         ".sectionHeader": {
           fontFamily: "Inika",
@@ -33,6 +33,7 @@ const StyleWrapper: React.FC<StyleWrapperProps> = ({ children }) => {
           margin: "0px 5px",
           fontWeight: 400,
           textDecoration: "none",
+          paddingBottom: 1,
         },
         ".stackedText": {
           "& > *": {

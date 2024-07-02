@@ -33,7 +33,7 @@ import { LinkedIn, GitHub } from "@mui/icons-material";
 
 const UtilsTopNav = () => {
   return (
-    <AppBar position="static" color="primary" elevation={0}>
+    <AppBar position="sticky" color="primary" elevation={0}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography

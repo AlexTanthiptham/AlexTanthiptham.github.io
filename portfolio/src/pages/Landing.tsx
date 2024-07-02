@@ -1,14 +1,5 @@
-import React from "react";
 import "./Landing.css";
-import {
-  Box,
-  Button,
-  Container,
-  Divider,
-  Grid,
-  TextField,
-  Typography,
-} from "@mui/material";
+import { Container } from "@mui/material";
 
 import StyleWrapper from "../components/StyleWrapper";
 
