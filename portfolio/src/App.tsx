@@ -11,8 +11,8 @@ function App() {
       <UtilsTopNav />
       <Routes>
         <Route path="/" element={<WIP />} />,
-        <Route path="/Home" element={<Landing />} />
-        <Route path="/Blog" element={<WIP />} />
+        <Route path="/home" element={<Landing />} />
+        <Route path="/blog" element={<WIP />} />
       </Routes>
     </div>
   );

@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import { LinkedIn, GitHub } from "@mui/icons-material";
+import { useLocation, useNavigate } from "react-router-dom";
 
 /* TODO: 
   - Implement responsive appbar (hamburger menu -> modal for xs screens)
@@ -32,6 +33,39 @@ import { LinkedIn, GitHub } from "@mui/icons-material";
 // ))}
 
 const UtilsTopNav = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    targetId: string,
+    path: string
+  ) => {
+    e.preventDefault();
+    if (location.pathname !== path) {
+      navigate(path);
+      setTimeout(() => {
+        scrollToElement(targetId);
+      }, 0);
+    } else {
+      scrollToElement(targetId);
+    }
+  };
+
+  const scrollToElement = (targetId: string) => {
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      const offset = 64; // Adjust based on your navbar height
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <AppBar position="sticky" color="primary" elevation={0}>
       <Container maxWidth="xl">
@@ -40,7 +74,7 @@ const UtilsTopNav = () => {
             variant="h5"
             noWrap
             component="a"
-            href="/Home"
+            href="/home#about"
             color="inherit"
             sx={{
               fontFamily: "Italiana",
@@ -48,6 +82,7 @@ const UtilsTopNav = () => {
               textDecoration: "none",
             }}
             flexGrow={1}
+            onClick={(e) => handleNavClick(e, "about", "/home")}
           >
             Alex.Tanth
           </Typography>
@@ -71,9 +106,10 @@ const UtilsTopNav = () => {
               variant="h6"
               noWrap
               component="a"
-              href="/Home#experience"
+              href="/home#experience"
               color="inherit"
               className="navButton"
+              onClick={(e) => handleNavClick(e, "experience", "/home")}
             >
               Experience
             </Typography>
@@ -81,9 +117,10 @@ const UtilsTopNav = () => {
               variant="h6"
               noWrap
               component="a"
-              href="/Home#projects"
+              href="/home#projects"
               color="inherit"
               className="navButton"
+              onClick={(e) => handleNavClick(e, "projects", "/home")}
             >
               Projects
             </Typography>
@@ -91,9 +128,10 @@ const UtilsTopNav = () => {
               variant="h6"
               noWrap
               component="a"
-              href="/Home#contact"
+              href="/home#contact"
               color="inherit"
               className="navButton"
+              onClick={(e) => handleNavClick(e, "contact", "/home")}
             >
               Contact
             </Typography>
