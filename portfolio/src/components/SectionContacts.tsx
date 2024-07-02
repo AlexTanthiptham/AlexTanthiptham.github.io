@@ -1,6 +1,13 @@
 import React, { useRef } from "react";
 
-import { Box, Button, Container, TextField, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Container,
+  Stack,
+  TextField,
+  Typography,
+} from "@mui/material";
 import { Send, Delete } from "@mui/icons-material/";
 import emailjs from "@emailjs/browser";
 
@@ -37,6 +44,9 @@ const SectionContacts = () => {
   return (
     <StyleWrapper>
       <Container id="contact" maxWidth="lg" className="stackedText">
+        <Typography variant="h3" className="sectionHeader">
+          Contact
+        </Typography>
         <Container
           component="form"
           ref={form}
@@ -44,49 +54,49 @@ const SectionContacts = () => {
           maxWidth="md"
           sx={{
             "& > *": {
-              py: 3,
+              m: 1,
             },
           }}
         >
-          <Typography variant="h3" className="sectionHeader">
-            Contact
-          </Typography>
           <Typography variant="body1" className="textInika" align="center">
             Let's talk! I'm reachable at jt20@illinois.edu or through the form
             below
           </Typography>
-          <TextField
-            label="Your Name"
-            name="user_name"
-            variant="outlined"
-            fullWidth={true}
-            className="textInika"
-            required={true}
-          />
-          <TextField
-            name="user_email"
-            label="Your Email Address"
-            variant="outlined"
-            fullWidth={true}
-            className="textInika"
-            required={true}
-          />
-          <TextField
-            name="message"
-            label="Your Message"
-            variant="outlined"
-            fullWidth={true}
-            className="textInika"
-            required={true}
-          />
-          <Container
+          <Box
             sx={{
-              alignItems: "center",
               "& > *": {
-                mx: 3,
+                m: 1,
               },
             }}
           >
+            <TextField
+              label="Your Name"
+              name="user_name"
+              fullWidth={true}
+              className="textInika"
+              required={true}
+              color="secondary"
+            />
+            <TextField
+              name="user_email"
+              label="Your Email Address"
+              fullWidth={true}
+              className="textInika"
+              required={true}
+              color="secondary"
+            />
+            <TextField
+              name="message"
+              label="Your Message"
+              fullWidth={true}
+              className="textInika"
+              required={true}
+              color="secondary"
+              multiline
+              rows={6}
+            />
+          </Box>
+          <Box display="flex" justifyContent="space-evenly" alignItems="center">
             <Button
               id="contact-submit"
               variant="contained"
@@ -103,7 +113,7 @@ const SectionContacts = () => {
             >
               Clear
             </Button>
-          </Container>
+          </Box>
         </Container>
       </Container>
     </StyleWrapper>
