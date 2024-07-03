@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./theme";
 
@@ -12,11 +12,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <Router>
       <ThemeProvider theme={theme}>
         <App />
       </ThemeProvider>
-    </BrowserRouter>
+    </Router>
   </React.StrictMode>
 );
 

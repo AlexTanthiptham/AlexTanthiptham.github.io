@@ -11,7 +11,7 @@ import { LinkedIn, GitHub } from "@mui/icons-material";
 import { useLocation, useNavigate } from "react-router-dom";
 
 /* TODO: 
-  - Implement responsive appbar (hamburger menu -> modal for xs screens)
+  - Implement responsive appbar (hamburger menu -> modal for xs screens) --> SEE PLACEHOLDERS
   - Implement dynamically generated nav buttons
     - NOTE: Need to find a way to manage the fact that some links are to sections
       on the same page, while others are to different pages when assigning hrefs
@@ -68,15 +68,17 @@ const UtilsTopNav = () => {
 
   return (
     <AppBar position="sticky" color="secondary" elevation={0}>
-      <Container maxWidth="xl">
+      <Container id="navbarWrapper" maxWidth="xl" sx={{ overflow: "hidden" }}>
         <Toolbar disableGutters>
           <Typography
+            id="navbarTitle"
             variant="h5"
             noWrap
             component="a"
             href="/home#about"
             color="inherit"
             sx={{
+              display: { xs: "none", sm: "block" }, // PLACEHOLDER: Always visible once hamburger menu implemented
               fontFamily: "Italiana",
               fontWeight: 400,
               textDecoration: "none",
@@ -87,6 +89,7 @@ const UtilsTopNav = () => {
             Alex.Tanth
           </Typography>
           <Box
+            id="navbarLinksDesktop"
             sx={{
               ".navButton": {
                 color: "secondary.contrastText",
@@ -96,10 +99,11 @@ const UtilsTopNav = () => {
                 fontWeight: 400,
                 textDecoration: "none",
               },
-              flexGrow: 0,
+              flexGrow: { xs: 1, sm: 0 },
               alignItems: "center",
+              justifyContent: "space-evenly",
               gap: 2,
-              display: { xs: "flex", md: "flex" },
+              display: { xs: "flex", sm: "flex" }, // PLACEHOLDER: xs to none once hamburger menu implemented
             }}
           >
             <Typography
@@ -142,6 +146,7 @@ const UtilsTopNav = () => {
               href="/blog"
               color="inherit"
               className="navButton"
+              sx={{ display: { xs: "none", sm: "none" } }} // NOTE: This is a stop gap until I implement the page
             >
               Etc.
             </Typography>

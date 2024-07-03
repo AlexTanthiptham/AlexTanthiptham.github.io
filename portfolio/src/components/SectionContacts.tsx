@@ -59,6 +59,7 @@ const SectionContacts = () => {
             sx={{
               "& > *": {
                 m: 1,
+                p: 0.5,
               },
             }}
           >
@@ -92,7 +93,8 @@ const SectionContacts = () => {
           <Box display="flex" justifyContent="space-evenly" alignItems="center">
             <Button
               id="contact-submit"
-              variant="contained"
+              variant="outlined"
+              color="secondary"
               endIcon={<Send />}
               type="submit"
             >
@@ -100,7 +102,8 @@ const SectionContacts = () => {
             </Button>
             <Button
               id="contact-clear"
-              variant="contained"
+              variant="outlined"
+              color="secondary"
               endIcon={<Delete />}
               type="reset"
             >
