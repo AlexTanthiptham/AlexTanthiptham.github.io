@@ -28,7 +28,7 @@ const SectionAbout = () => {
         >
           <Grid container spacing={5}>
             <Grid
-              id="sectionAboutImage"
+              id="aboutImage"
               item
               xs={12}
               sm={5}
@@ -55,7 +55,7 @@ const SectionAbout = () => {
               />
             </Grid>
             <Grid
-              id="sectionAboutText"
+              id="aboutText"
               item
               xs={12}
               sm={7}

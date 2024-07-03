@@ -49,50 +49,54 @@ const SectionContacts = () => {
             "& > *": {
               m: 1,
             },
+            ".inputField": {
+              my: 1,
+            },
           }}
         >
           <Typography variant="body1" className="textInika" align="center">
             Let's talk! I'm reachable at jt20@illinois.edu or through the form
             below.
           </Typography>
-          <Box
-            sx={{
-              "& > *": {
-                m: 1,
-                p: 0.5,
-              },
-            }}
-          >
+          <Box id="contactFormWrapper">
             <TextField
+              id="contactFormName"
               label="Your Name"
               name="user_name"
               fullWidth={true}
-              className="textInika"
+              className="textInika inputField"
               required={true}
               color="secondary"
             />
             <TextField
+              id="contactFormEmail"
               name="user_email"
               label="Your Email Address"
               fullWidth={true}
-              className="textInika"
+              className="textInika inputField"
               required={true}
               color="secondary"
             />
             <TextField
+              id="contactFormMessage"
               name="message"
               label="Your Message"
               fullWidth={true}
-              className="textInika"
+              className="textInika inputField"
               required={true}
               color="secondary"
               multiline
               rows={6}
             />
           </Box>
-          <Box display="flex" justifyContent="space-evenly" alignItems="center">
+          <Box
+            id="contactButtonWrapper"
+            display="flex"
+            justifyContent="space-evenly"
+            alignItems="center"
+          >
             <Button
-              id="contact-submit"
+              id="contactButtonSubmit"
               variant="outlined"
               color="secondary"
               endIcon={<Send />}
@@ -101,7 +105,7 @@ const SectionContacts = () => {
               Submit
             </Button>
             <Button
-              id="contact-clear"
+              id="contactButtonClear"
               variant="outlined"
               color="secondary"
               endIcon={<Delete />}
