@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.f5368794.css",
-    "main.js": "/static/js/main.336c10de.js",
-    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "main.css": "/static/css/main.b6eb1aa8.css",
+    "main.js": "/static/js/main.20049104.js",
+    "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
+    "static/media/project-visat.png": "/static/media/project-visat.1d2272f6a4bcef16e570.png",
+    "static/media/project-gemev.jpg": "/static/media/project-gemev.87288e123729da2665b7.jpg",
+    "static/media/project-biped.png": "/static/media/project-biped.133e4e356bf4169f9d65.png",
+    "static/media/profile.jpg": "/static/media/profile.cde42e1db33736693bfc.jpg",
     "static/media/roadworks.png": "/static/media/roadworks.64c7c728f42378021884.png",
+    "static/media/project-tagalong.png": "/static/media/project-tagalong.f16c44a9d7ea9156fd07.png",
     "index.html": "/index.html",
-    "main.f5368794.css.map": "/static/css/main.f5368794.css.map",
-    "main.336c10de.js.map": "/static/js/main.336c10de.js.map",
-    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+    "main.b6eb1aa8.css.map": "/static/css/main.b6eb1aa8.css.map",
+    "main.20049104.js.map": "/static/js/main.20049104.js.map",
+    "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5368794.css",
-    "static/js/main.336c10de.js"
+    "static/css/main.b6eb1aa8.css",
+    "static/js/main.20049104.js"
   ]
 }
