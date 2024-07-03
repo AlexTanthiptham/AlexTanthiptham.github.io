@@ -1,13 +1,6 @@
 import React, { useRef } from "react";
 
-import {
-  Box,
-  Button,
-  Container,
-  Stack,
-  TextField,
-  Typography,
-} from "@mui/material";
+import { Box, Button, Container, TextField, Typography } from "@mui/material";
 import { Send, Delete } from "@mui/icons-material/";
 import emailjs from "@emailjs/browser";
 
@@ -42,8 +35,8 @@ const SectionContacts = () => {
   };
 
   return (
-    <StyleWrapper>
-      <Container id="contact" maxWidth="lg" className="stackedText">
+    <Container id="contact" maxWidth="lg" className="stackedText">
+      <StyleWrapper>
         <Typography variant="h3" className="sectionHeader">
           Contact
         </Typography>
@@ -60,7 +53,7 @@ const SectionContacts = () => {
         >
           <Typography variant="body1" className="textInika" align="center">
             Let's talk! I'm reachable at jt20@illinois.edu or through the form
-            below
+            below.
           </Typography>
           <Box
             sx={{
@@ -115,8 +108,8 @@ const SectionContacts = () => {
             </Button>
           </Box>
         </Container>
-      </Container>
-    </StyleWrapper>
+      </StyleWrapper>
+    </Container>
   );
 };
 

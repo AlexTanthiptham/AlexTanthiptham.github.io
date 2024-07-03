@@ -10,10 +10,19 @@ import projectVisat from "../assets/project-icons/project-visat.png";
 
 const SectionProjects = () => {
   return (
-    <StyleWrapper>
-      <Container id="projects" maxWidth="lg">
+    <Container id="projects" maxWidth="lg">
+      <StyleWrapper>
         <Typography variant="h3" className="sectionHeader">
           Projects
+        </Typography>
+        <Typography
+          variant="body1"
+          className="textInika"
+          align="center"
+          sx={{ marginBottom: 2 }}
+        >
+          Note: This section is a work in progress. In the near future, project
+          tiles will be clickable to display more information.
         </Typography>
         <Grid
           container
@@ -77,8 +86,8 @@ const SectionProjects = () => {
             </Box>
           </Grid>
         </Grid>
-      </Container>
-    </StyleWrapper>
+      </StyleWrapper>
+    </Container>
   );
 };
 

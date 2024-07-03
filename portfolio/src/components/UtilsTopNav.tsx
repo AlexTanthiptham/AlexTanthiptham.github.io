@@ -67,7 +67,7 @@ const UtilsTopNav = () => {
   };
 
   return (
-    <AppBar position="sticky" color="primary" elevation={0}>
+    <AppBar position="sticky" color="secondary" elevation={0}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -89,8 +89,8 @@ const UtilsTopNav = () => {
           <Box
             sx={{
               ".navButton": {
-                color: "primary.contrastText",
-                borderColor: "primary.main",
+                color: "secondary.contrastText",
+                borderColor: "secondary.main",
                 margin: "0px 5px",
                 fontFamily: "Italiana",
                 fontWeight: 400,
@@ -149,13 +149,13 @@ const UtilsTopNav = () => {
               component="a"
               href="https://www.linkedin.com/in/alex-tanth/"
             >
-              <LinkedIn sx={{ color: "primary.contrastText" }} />
+              <LinkedIn sx={{ color: "secondary.contrastText" }} />
             </IconButton>
             <IconButton
               component="a"
               href="https://github.com/AlexTanthiptham/"
             >
-              <GitHub sx={{ color: "primary.contrastText" }} />
+              <GitHub sx={{ color: "secondary.contrastText" }} />
             </IconButton>
           </Box>
         </Toolbar>

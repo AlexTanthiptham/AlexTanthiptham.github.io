@@ -4,10 +4,13 @@ interface StyleWrapperProps {
   children: React.ReactNode;
 }
 
+// Wrapper for applying frequently used CSS styled classes to different components.
+// Do not apply any styles to this component directly. Only use this to hold classes.
+
 const StyleWrapper: React.FC<StyleWrapperProps> = ({ children }) => {
   return (
     <Box
-      id="landing"
+      id="sWrapper"
       sx={{
         ".textBold": {
           fontWeight: 600,

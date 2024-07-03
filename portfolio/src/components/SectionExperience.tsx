@@ -4,20 +4,19 @@ import StyleWrapper from "./StyleWrapper";
 
 const SectionExperience = () => {
   return (
-    <StyleWrapper>
-      <Container
-        id="experience"
-        maxWidth="lg"
-        sx={{
-          ".expContainer": {
-            "& > *": {
-              paddingTop: 0.25,
-              paddingBottom: 0.25,
-            },
-            paddingBottom: 1,
+    <Container
+      id="experience"
+      maxWidth="lg"
+      sx={{
+        ".expContainer": {
+          "& > *": {
+            py: "0.15rem",
           },
-        }}
-      >
+          py: "0.5rem",
+        },
+      }}
+    >
+      <StyleWrapper>
         <Typography variant="h3" className="sectionHeader">
           Experience
         </Typography>
@@ -42,18 +41,18 @@ const SectionExperience = () => {
             </Typography>
           </Box>
           <Typography variant="body1" className="textRegular textInika">
-            - The Cyberphysical Systems Integration Lab (CPSIL), led by
+            ‣ The Cyberphysical Systems Integration Lab (CPSIL), led by
             Professor Lui Sha and doctoral candidate Simon Yu, is a research
             group dedicated to enhancing the safety and robustness of
             next-generation autonomous vehicles.
             <br />
-            - Engineered PyTorch-based ensemble networks to improve traffic sign
+            ‣ Engineered PyTorch-based ensemble networks to improve traffic sign
             classification accuracy of multitask learning and multi-layer
             perceptron networks by 7.96% and reduce loss of accuracy against
             ImageNet-C attacks by up to 17.83%. <br />
-            - Developed robust internal tools for image pre-processing and
+            ‣ Developed robust internal tools for image pre-processing and
             executing adversarial attacks, utilizing PyTorch and OpenCV, to
-            improve robustness and streamline testing. <br />- Applied
+            improve robustness and streamline testing. <br />‣ Applied
             multiprocessing to streamline experimental processes, reducing
             testing and processing run time by up to 65%.
           </Typography>
@@ -79,9 +78,9 @@ const SectionExperience = () => {
             </Typography>
           </Box>
           <Typography variant="body1" className="textRegular textInika">
-            - Designed and assembled new IMU PCBs in KiCAD for Biped, a
+            ‣ Designed and assembled new IMU PCBs in KiCAD for Biped, a
             two-wheeled self-stabilizing research and educational robot. <br />
-            - Executed comprehensive unit testing using oscilloscopes,
+            ‣ Executed comprehensive unit testing using oscilloscopes,
             multimeters to validate the functionality of Biped PCBs. <br />-
             Developed procedures to resolve hardware, software and mechanical
             faults, quadrupling the number of functional units.
@@ -108,18 +107,18 @@ const SectionExperience = () => {
             </Typography>
           </Box>
           <Typography variant="body1" className="textRegular textInika">
-            - Student led business consulting organization with a focus on
+            ‣ Student led business consulting organization with a focus on
             international businesses. <br />
-            - Strategized development and launch of a desktop-based business
+            ‣ Strategized development and launch of a desktop-based business
             suite for a startup’s cloud collaboration app. <br />
-            - Conducted customer research and interviews to identify areas of
+            ‣ Conducted customer research and interviews to identify areas of
             improvement, prototyped suggested features using Figma. <br />-
             Coordinated team of 4 consultants, scheduling and coordinating
             project progress using Gantt charts and MS Teams.
           </Typography>
         </Box>
-      </Container>
-    </StyleWrapper>
+      </StyleWrapper>
+    </Container>
   );
 };
 
