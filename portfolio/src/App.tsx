@@ -10,7 +10,7 @@ function App() {
     <div>
       <UtilsTopNav />
       <Routes>
-        <Route path="/" element={<WIP />} />,
+        <Route path="/" element={<Landing />} />,
         <Route path="/home" element={<Landing />} />
         <Route path="/blog" element={<WIP />} />
       </Routes>
