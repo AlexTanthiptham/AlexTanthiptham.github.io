@@ -1,5 +1,5 @@
 import "./Landing.css";
-import { Container } from "@mui/material";
+import { Box, Container } from "@mui/material";
 
 import StyleWrapper from "../components/StyleWrapper";
 
@@ -12,8 +12,8 @@ import UtilsFooter from "../components/UtilsFooter";
 const Landing = () => {
   return (
     <StyleWrapper>
-      <Container
-        id="landing"
+      <Box
+        id="landingWrapper"
         sx={{
           "& > *": {
             paddingBottom: 2,
@@ -25,7 +25,7 @@ const Landing = () => {
         <SectionProjects />
         <SectionContacts />
         <UtilsFooter />
-      </Container>
+      </Box>
     </StyleWrapper>
   );
 };
