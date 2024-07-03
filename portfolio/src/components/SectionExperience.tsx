@@ -25,56 +25,97 @@ const SectionExperience = () => {
           <Typography variant="h5" className="textBold textInika">
             Software Engineer
           </Typography>
-          <Typography variant="h5" className="textRegular textInika">
-            Location
-          </Typography>
+          <Box display="flex" flexDirection="row">
+            <Typography
+              variant="h6"
+              className="textRegular textInika"
+              flexGrow={1}
+            >
+              CPSIL at University of Illinois at Urbana-Champaign
+            </Typography>
+            <Typography
+              variant="h6"
+              className="textRegular textInika"
+              flexGrow={0}
+            >
+              December 2023 - Present
+            </Typography>
+          </Box>
           <Typography variant="body1" className="textRegular textInika">
-            Body <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
+            - The Cyberphysical Systems Integration Lab (CPSIL), led by
+            Professor Lui Sha and doctoral candidate Simon Yu, is a research
+            group dedicated to enhancing the safety and robustness of
+            next-generation autonomous vehicles.
+            <br />
+            - Engineered PyTorch-based ensemble networks to improve traffic sign
+            classification accuracy of multitask learning and multi-layer
+            perceptron networks by 7.96% and reduce loss of accuracy against
+            ImageNet-C attacks by up to 17.83%. <br />
+            - Developed robust internal tools for image pre-processing and
+            executing adversarial attacks, utilizing PyTorch and OpenCV, to
+            improve robustness and streamline testing. <br />- Applied
+            multiprocessing to streamline experimental processes, reducing
+            testing and processing run time by up to 65%.
           </Typography>
         </Box>
         <Box className="expContainer">
           <Typography variant="h5" className="textBold textInika">
-            Position Title
+            Research Assistant
           </Typography>
-          <Typography variant="h5" className="textRegular textInika">
-            Location
-          </Typography>
+          <Box display="flex" flexDirection="row">
+            <Typography
+              variant="h6"
+              className="textRegular textInika"
+              flexGrow={1}
+            >
+              CPSIL at University of Illinois at Urbana-Champaign
+            </Typography>
+            <Typography
+              variant="h6"
+              className="textRegular textInika"
+              flexGrow={0}
+            >
+              August 2023 - December 2023
+            </Typography>
+          </Box>
           <Typography variant="body1" className="textRegular textInika">
-            Body <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
+            - Designed and assembled new IMU PCBs in KiCAD for Biped, a
+            two-wheeled self-stabilizing research and educational robot. <br />
+            - Executed comprehensive unit testing using oscilloscopes,
+            multimeters to validate the functionality of Biped PCBs. <br />-
+            Developed procedures to resolve hardware, software and mechanical
+            faults, quadrupling the number of functional units.
           </Typography>
         </Box>
         <Box className="expContainer">
           <Typography variant="h5" className="textBold textInika">
-            Position Title
+            Senior Consultant
           </Typography>
-          <Typography variant="h5" className="textRegular textInika">
-            Location
-          </Typography>
+          <Box display="flex" flexDirection="row">
+            <Typography
+              variant="h6"
+              className="textRegular textInika"
+              flexGrow={1}
+            >
+              FACES Consulting at University of Illinois at Urbana-Champaign
+            </Typography>
+            <Typography
+              variant="h6"
+              className="textRegular textInika"
+              flexGrow={0}
+            >
+              January 2023 - August 2023
+            </Typography>
+          </Box>
           <Typography variant="body1" className="textRegular textInika">
-            Body {"\n"} Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
-          </Typography>
-        </Box>
-        <Box className="expContainer">
-          <Typography variant="h5" className="textBold textInika">
-            Position Title
-          </Typography>
-          <Typography variant="h5" className="textRegular textInika">
-            Location
-          </Typography>
-          <Typography variant="body1" className="textRegular textInika">
-            Body {"\n"} Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
+            - Student led business consulting organization with a focus on
+            international businesses. <br />
+            - Strategized development and launch of a desktop-based business
+            suite for a startup’s cloud collaboration app. <br />
+            - Conducted customer research and interviews to identify areas of
+            improvement, prototyped suggested features using Figma. <br />-
+            Coordinated team of 4 consultants, scheduling and coordinating
+            project progress using Gantt charts and MS Teams.
           </Typography>
         </Box>
       </Container>
