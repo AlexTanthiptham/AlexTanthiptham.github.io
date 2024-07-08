@@ -1,6 +1,7 @@
 import { Box, Grid, Container, Typography } from "@mui/material";
 
-import StyleWrapper from "./StyleWrapper";
+import StyleWrapper from "./UtilsStyleWrapper";
+import ProjectTile from "./UtilsProjectTile";
 
 // TODO: Clean up image imports
 import projectBiped from "../assets/project-icons/project-biped.png";
@@ -10,7 +11,7 @@ import projectVisat from "../assets/project-icons/project-visat.png";
 
 const SectionProjects = () => {
   return (
-    <Container id="projects" maxWidth="lg">
+    <Container id="projects" maxWidth="lg" className="textPrimary">
       <StyleWrapper>
         <Typography variant="h3" className="sectionHeader">
           Projects
@@ -24,66 +25,44 @@ const SectionProjects = () => {
           Note: This section is a work in progress. In the near future, project
           tiles will be clickable to display more information.
         </Typography>
-        <Grid
-          container
-          spacing={0}
-          sx={{
-            ".projectContainer": {
-              position: "relative",
-              width: "100%",
-              paddingTop: "100%", // 1:1 aspect ratio
-              overflow: "hidden",
-            },
-            ".projectImage": {
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              transform: "translate(-50%, -50%)",
-            },
-          }}
-        >
+        <Grid container spacing={0}>
           <Grid item xs={12} sm={6} md={3}>
-            <Box className="projectContainer">
-              <Box
-                component="img"
-                src={projectBiped}
-                alt={"Biped"}
-                className="projectImage"
-              />
-            </Box>
+            <ProjectTile
+              image={projectBiped}
+              title={"CPSIL - BIPED"}
+              description={
+                "Two wheeled self-balancing robots for CS431 Embedded Systems and as a research platform for CPSIL Visat "
+              }
+              tags={["Python"]}
+            />
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
-            <Box className="projectContainer">
-              <Box
-                component="img"
-                src={projectGemev}
-                alt={"GemEV"}
-                className="projectImage"
-              />
-            </Box>
+            <ProjectTile
+              image={projectGemev}
+              title={"Lane Following for GEM e2"}
+              description={"Lane following for GEM e2 electric vehicle"}
+              tags={["Python, OpenCV"]}
+            />
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
-            <Box className="projectContainer">
-              <Box
-                component="img"
-                src={projectTagAlong}
-                alt={"GemEV"}
-                className="projectImage"
-              />
-            </Box>
+            <ProjectTile
+              image={projectTagAlong}
+              title={"TagAlong Robot"}
+              description={
+                "User-following personal assistant for disabled users"
+              }
+              tags={["PCB Design"]}
+            />
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
-            <Box className="projectContainer">
-              <Box
-                component="img"
-                src={projectVisat}
-                alt={"GemEV"}
-                className="projectImage"
-              />
-            </Box>
+            <ProjectTile
+              image={projectVisat}
+              title={"CPSIL - VISAT"}
+              description={
+                "User-following personal assistant for disabled users"
+              }
+              tags={["Python, Pytorch, OpenCV"]}
+            />
           </Grid>
         </Grid>
       </StyleWrapper>
