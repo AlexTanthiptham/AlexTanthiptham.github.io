@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 
-import StyleWrapper from "./StyleWrapper";
+import StyleWrapper from "./UtilsStyleWrapper";
 
 import profile from "../assets/profile.jpg";
 
@@ -20,9 +20,6 @@ const SectionAbout = () => {
             height: {
               xs: "auto", // No set height for sizes smaller than xs
               sm: "90vh", // height=100vh (10vh padding included in Landing.tsx for all sections) for screen sizes larger than sm
-            },
-            ".textSecondary": {
-              color: "secondary.contrastText",
             },
           }}
         >

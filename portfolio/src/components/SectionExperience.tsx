@@ -1,6 +1,6 @@
 import { Box, Container, Typography } from "@mui/material";
 
-import StyleWrapper from "./StyleWrapper";
+import StyleWrapper from "./UtilsStyleWrapper";
 
 const SectionExperience = () => {
   return (

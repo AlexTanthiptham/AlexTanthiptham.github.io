@@ -1,4 +1,3 @@
-import "./UtilsTopNav.css";
 import {
   AppBar,
   Box,

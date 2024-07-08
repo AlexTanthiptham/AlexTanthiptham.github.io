@@ -1,6 +1,6 @@
 import { Container, Divider, Typography } from "@mui/material";
 
-import StyleWrapper from "./StyleWrapper";
+import StyleWrapper from "./UtilsStyleWrapper";
 
 const UtilsFooter = () => {
   return (

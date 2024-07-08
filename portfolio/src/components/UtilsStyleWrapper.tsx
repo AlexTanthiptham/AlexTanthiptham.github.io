@@ -40,6 +40,12 @@ const StyleWrapper: React.FC<StyleWrapperProps> = ({ children }) => {
             paddingBottom: 1,
           },
         },
+        ".textPrimary": {
+          color: "primary.contrastText",
+        },
+        ".textSecondary": {
+          color: "secondary.contrastText",
+        },
       }}
     >
       {children}

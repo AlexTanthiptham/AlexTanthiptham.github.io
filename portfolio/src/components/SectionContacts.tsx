@@ -4,7 +4,7 @@ import { Box, Button, Container, TextField, Typography } from "@mui/material";
 import { Send, Delete } from "@mui/icons-material/";
 import emailjs from "@emailjs/browser";
 
-import StyleWrapper from "./StyleWrapper";
+import StyleWrapper from "./UtilsStyleWrapper";
 
 const SectionContacts = () => {
   // Insert function for sending email here
