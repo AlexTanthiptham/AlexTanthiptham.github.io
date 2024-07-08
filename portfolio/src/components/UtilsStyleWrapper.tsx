@@ -12,27 +12,30 @@ const StyleWrapper: React.FC<StyleWrapperProps> = ({ children }) => {
     <Box
       id="sWrapper"
       sx={{
+        ".textRegular": {
+          fontWeight: 400,
+        },
         ".textBold": {
           fontWeight: 600,
         },
-        ".textRegular": {
-          fontWeight: 400,
+        ".textItalic": {
+          fontStyle: "italic",
+        },
+        ".textUnderline": {
+          textDecoration: "underline",
         },
         ".textInika": {
           color: "primary.contrastText",
           fontFamily: "Inika",
-          textDecoration: "none",
         },
         ".textItaliana": {
           color: "primary.contrastText",
           fontFamily: "Italiana",
-          textDecoration: "none",
         },
         ".sectionHeader": {
           fontFamily: "Inika",
           color: "primary.contrastText",
           fontWeight: 400,
-          textDecoration: "none",
           paddingBottom: 1,
         },
         ".stackedText": {

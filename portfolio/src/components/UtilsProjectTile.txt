@@ -57,6 +57,7 @@ const ProjectTile: React.FC<ProjectTileProps> = ({
             "&:hover": {
               opacity: 1,
             },
+            textWrap: "wrap",
           }}
         >
           <Typography variant="h4" className="textInika textBold textSecondary">
@@ -65,8 +66,14 @@ const ProjectTile: React.FC<ProjectTileProps> = ({
           <Typography variant="h6" className="textInika textSecondary">
             {description}
           </Typography>
+          <Typography
+            variant="body2"
+            className="textInika textSecondary textUnderline textBold"
+          >
+            Tags:
+          </Typography>
           <Typography variant="body2" className="textInika textSecondary">
-            Skills: {tags.join(", ")}
+            {tags.join(", ")}
           </Typography>
         </Box>
       </StyleWrapper>
