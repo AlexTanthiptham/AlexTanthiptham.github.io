@@ -1,8 +1,10 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import { ContactPage } from "@mui/icons-material/";
 
 import StyleWrapper from "./UtilsStyleWrapper";
 
 import profile from "../assets/profile.jpg";
+import resume from "../assets/doc-resume.pdf";
 
 const SectionAbout = () => {
   return (
@@ -86,6 +88,25 @@ const SectionAbout = () => {
                 vision. Interest in computer vision, robotics, autonomous
                 systems. Looking for full-time opportunities.
               </Typography>
+              <a
+                href={resume}
+                download="AlexTanthipthamResume.pdf"
+                style={{ textDecoration: "none" }}
+              >
+                <Button
+                  id="aboutButtonResume"
+                  variant="outlined"
+                  color="primary"
+                  endIcon={<ContactPage />}
+                  type="button"
+                  sx={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  My Resume
+                </Button>
+              </a>
             </Grid>
           </Grid>
         </Container>

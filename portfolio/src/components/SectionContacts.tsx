@@ -101,6 +101,10 @@ const SectionContacts = () => {
               color="secondary"
               endIcon={<Send />}
               type="submit"
+              sx={{
+                justifyContent: "center",
+                alignItems: "center",
+              }}
             >
               Submit
             </Button>
@@ -110,6 +114,10 @@ const SectionContacts = () => {
               color="secondary"
               endIcon={<Delete />}
               type="reset"
+              sx={{
+                justifyContent: "center",
+                alignItems: "center",
+              }}
             >
               Clear
             </Button>

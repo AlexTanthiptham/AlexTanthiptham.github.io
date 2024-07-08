@@ -40,7 +40,7 @@ const StyleWrapper: React.FC<StyleWrapperProps> = ({ children }) => {
         },
         ".stackedText": {
           "& > *": {
-            paddingBottom: 1,
+            marginBottom: 2,
           },
         },
         ".textPrimary": {
