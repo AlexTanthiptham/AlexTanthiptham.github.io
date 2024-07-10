@@ -1,22 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.487c2668.css",
-    "main.js": "/static/js/main.3a7e1cf5.js",
+    "main.js": "/static/js/main.e5d6da5a.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/project-visat.png": "/static/media/project-visat.1d2272f6a4bcef16e570.png",
-    "static/media/project-gemev.jpg": "/static/media/project-gemev.87288e123729da2665b7.jpg",
     "static/media/project-biped.png": "/static/media/project-biped.133e4e356bf4169f9d65.png",
+    "static/media/project-illinialert.png": "/static/media/project-illinialert.f7f06221302d5a3e4d0a.png",
+    "static/media/project-gemev.jpg": "/static/media/project-gemev.96e92cddf2c41475d26a.jpg",
     "static/media/profile.jpg": "/static/media/profile.cde42e1db33736693bfc.jpg",
     "static/media/doc-resume.pdf": "/static/media/doc-resume.1ae61abdf12ac34d4f78.pdf",
+    "static/media/project-llamabear.png": "/static/media/project-llamabear.ee83762d03e095485177.png",
     "static/media/roadworks.png": "/static/media/roadworks.64c7c728f42378021884.png",
     "static/media/project-tagalong.png": "/static/media/project-tagalong.f16c44a9d7ea9156fd07.png",
     "index.html": "/index.html",
     "main.487c2668.css.map": "/static/css/main.487c2668.css.map",
-    "main.3a7e1cf5.js.map": "/static/js/main.3a7e1cf5.js.map",
+    "main.e5d6da5a.js.map": "/static/js/main.e5d6da5a.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.487c2668.css",
-    "static/js/main.3a7e1cf5.js"
+    "static/js/main.e5d6da5a.js"
   ]
 }
