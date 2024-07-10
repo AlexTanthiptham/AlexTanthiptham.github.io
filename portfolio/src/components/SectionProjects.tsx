@@ -7,6 +7,8 @@ import projectBiped from "../assets/project-icons/project-biped.png";
 import projectGemev from "../assets/project-icons/project-gemev.jpg";
 import projectTagAlong from "../assets/project-icons/project-tagalong.png";
 import projectVisat from "../assets/project-icons/project-visat.png";
+import projectLlamaBear from "../assets/project-icons/project-llamabear.png";
+import projectIlliniAlert from "../assets/project-icons/project-illinialert.png";
 
 const SectionProjects = () => {
   return (
@@ -65,12 +67,22 @@ const SectionProjects = () => {
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
             <ProjectTile
-              image={projectVisat}
+              image={projectLlamaBear}
               title={"LlamaBear"}
               description={
                 "MERN stack web app for reviewing and improving resumes"
               }
-              tags={["React, Node.js, Express, MongoDB, Firebase"]}
+              tags={["React, Node.js, Express, MongoDB, Firebase, Figma"]}
+            />
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <ProjectTile
+              image={projectIlliniAlert}
+              title={"IlliniAlert App"}
+              description={
+                "Functional prototype for a campus safety app, visualizing crimes and hazards relative to the user's location"
+              }
+              tags={["Android Studio, Java, Google Maps API, Figma"]}
             />
           </Grid>
         </Grid>
@@ -117,7 +129,7 @@ const ProjectTile: React.FC<ProjectTileProps> = ({
             left: "50%",
             width: "100%",
             height: "100%",
-            objectFit: "cover",
+            objectFit: "contain",
             transform: "translate(-50%, -50%)",
           }}
         />
@@ -128,8 +140,9 @@ const ProjectTile: React.FC<ProjectTileProps> = ({
             top: 0,
             background: "rgba(0, 0, 0, 0.5)",
             color: "white",
-            width: "100%",
+            boxSizing: "border-box",
             height: "100%",
+            width: "100%",
             opacity: 0,
             padding: "5%",
             transition: "opacity 0.3s",
