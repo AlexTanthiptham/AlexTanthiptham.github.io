@@ -62,27 +62,20 @@ const SectionAbout = () => {
               sx={{ paddingBottom: "2vh" }}
             >
               <Typography
-                variant="h3"
-                className="textItaliana textRegular textSecondary"
-                color="secondary"
-              >
-                Hi I'm
-              </Typography>
-              <Typography
                 variant="h1"
-                className="textItaliana textRegular textSecondary"
+                className="fontPrimary textRegular textSecondary"
               >
-                Alex
+                Alex Tanthiptham
               </Typography>
               <Typography
                 variant="h5"
-                className="textInika textRegular textSecondary"
+                className="fontPrimary textRegular textSecondary"
               >
                 B.S. Electrical Engineering at UIUC '23
               </Typography>
               <Typography
                 variant="body1"
-                className="textInika textRegular textSecondary"
+                className="fontPrimary textRegular textSecondary"
               >
                 Recent graduate from UIUC. Experience with PCB design, computer
                 vision. Interest in computer vision, robotics, autonomous
@@ -107,6 +100,19 @@ const SectionAbout = () => {
                   My Resume
                 </Button>
               </a>
+              <Button
+                id="aboutButtonResume"
+                variant="outlined"
+                color="primary"
+                endIcon={<ContactPage />}
+                type="button"
+                sx={{
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                My Resume
+              </Button>
             </Grid>
           </Grid>
         </Container>

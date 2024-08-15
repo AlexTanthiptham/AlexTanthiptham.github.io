@@ -1,14 +1,17 @@
 import {
   AppBar,
+  Backdrop,
   Box,
   Container,
+  Fade,
+  Modal,
   IconButton,
   Toolbar,
   Typography,
 } from "@mui/material";
-import { LinkedIn, GitHub } from "@mui/icons-material";
+import { Close, GitHub, LinkedIn, Menu } from "@mui/icons-material";
 import { useLocation, useNavigate } from "react-router-dom";
-
+import { useState } from "react";
 /* TODO: 
   - Implement responsive appbar (hamburger menu -> modal for xs screens) --> SEE PLACEHOLDERS
   - Implement dynamically generated nav buttons
@@ -34,6 +37,10 @@ import { useLocation, useNavigate } from "react-router-dom";
 const UtilsTopNav = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleModalOpen = () => setModalOpen(true);
+  const handleModalClose = () => setModalOpen(false);
 
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
@@ -65,6 +72,153 @@ const UtilsTopNav = () => {
     }
   };
 
+  const NavBarDesktop = () => {
+    return (
+      <Box
+        id="navbarDesktopLinks"
+        sx={{
+          flexGrow: { xs: 1, sm: 0 },
+          alignItems: "center",
+          justifyContent: "space-evenly",
+          gap: 2,
+          display: { xs: "none", sm: "flex" },
+        }}
+      >
+        <Typography
+          variant="h6"
+          noWrap
+          component="a"
+          href="/home#experience"
+          color="inherit"
+          className="navButton"
+          onClick={(e) => handleNavClick(e, "experience", "/home")}
+        >
+          Experience
+        </Typography>
+        <Typography
+          variant="h6"
+          noWrap
+          component="a"
+          href="/home#projects"
+          color="inherit"
+          className="navButton"
+          onClick={(e) => handleNavClick(e, "projects", "/home")}
+        >
+          Projects
+        </Typography>
+        <Typography
+          variant="h6"
+          noWrap
+          component="a"
+          href="/home#contact"
+          color="inherit"
+          className="navButton"
+          onClick={(e) => handleNavClick(e, "contact", "/home")}
+        >
+          Contact
+        </Typography>
+        <Typography
+          variant="h6"
+          noWrap
+          component="a"
+          href="/blog"
+          color="inherit"
+          className="navButton"
+          sx={{ display: { xs: "none", sm: "none" } }} // NOTE: This is a stop gap until I implement the page
+        >
+          Etc.
+        </Typography>
+        <IconButton
+          component="a"
+          href="https://www.linkedin.com/in/alex-tanth/"
+        >
+          <LinkedIn sx={{ color: "secondary.contrastText" }} />
+        </IconButton>
+        <IconButton component="a" href="https://github.com/AlexTanthiptham/">
+          <GitHub sx={{ color: "secondary.contrastText" }} />
+        </IconButton>
+      </Box>
+    );
+  };
+
+  const NavBarMobile = () => {
+    return (
+      <Box>
+        <IconButton
+          id="navbarMobileMenuOpen"
+          component="a"
+          onClick={handleModalOpen}
+          sx={{
+            display: { xs: "block", sm: "none" },
+            color: "secondary.contrastText",
+            flexGrow: 0,
+            alignItems: "center",
+          }}
+        >
+          <Menu />
+        </IconButton>
+        <Modal open={modalOpen} onClose={handleModalClose} closeAfterTransition>
+          <Fade in={modalOpen}>
+            <Container
+              id="navbarMobileModal"
+              sx={{
+                height: "100%",
+                bgcolor: "secondary.main",
+                color: "secondary.contrastText",
+                position: "absolute" as "absolute",
+                width: "100%",
+                boxShadow: 24,
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "space-evenly",
+                gap: 0.5,
+                display: "flex",
+              }}
+            >
+              <Box>
+                <IconButton
+                  id="navbarMobileMenuOClose"
+                  component="a"
+                  onClick={handleModalClose}
+                  sx={{
+                    display: { xs: "block", sm: "none" },
+                    color: "secondary.contrastText",
+                    flexGrow: 0,
+                    alignItems: "center",
+                  }}
+                >
+                  <Close />
+                </IconButton>
+              </Box>
+              <Typography
+                variant="h6"
+                noWrap
+                component="a"
+                href="/home#projects"
+                color="inherit"
+                className="navButton"
+                onClick={(e) => handleNavClick(e, "projects", "/home")}
+              >
+                MOBILE NAV BUTTON 1
+              </Typography>
+              <Typography
+                variant="h6"
+                noWrap
+                component="a"
+                href="/home#projects"
+                color="inherit"
+                className="navButton"
+                onClick={(e) => handleNavClick(e, "projects", "/home")}
+              >
+                MOBILE NAV BUTTON 2
+              </Typography>
+            </Container>
+          </Fade>
+        </Modal>
+      </Box>
+    );
+  };
+
   return (
     <AppBar position="sticky" color="secondary" elevation={0}>
       <Container id="navbarWrapper" maxWidth="xl" sx={{ overflow: "hidden" }}>
@@ -77,7 +231,6 @@ const UtilsTopNav = () => {
             href="/home#about"
             color="inherit"
             sx={{
-              display: { xs: "none", sm: "block" }, // PLACEHOLDER: Always visible once hamburger menu implemented
               fontFamily: "Italiana",
               fontWeight: 400,
               textDecoration: "none",
@@ -88,7 +241,7 @@ const UtilsTopNav = () => {
             Alex.Tanth
           </Typography>
           <Box
-            id="navbarLinksDesktop"
+            id="navbarLinks"
             sx={{
               ".navButton": {
                 color: "secondary.contrastText",
@@ -98,69 +251,10 @@ const UtilsTopNav = () => {
                 fontWeight: 400,
                 textDecoration: "none",
               },
-              flexGrow: { xs: 1, sm: 0 },
-              alignItems: "center",
-              justifyContent: "space-evenly",
-              gap: 2,
-              display: { xs: "flex", sm: "flex" }, // PLACEHOLDER: xs to none once hamburger menu implemented
             }}
           >
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="/home#experience"
-              color="inherit"
-              className="navButton"
-              onClick={(e) => handleNavClick(e, "experience", "/home")}
-            >
-              Experience
-            </Typography>
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="/home#projects"
-              color="inherit"
-              className="navButton"
-              onClick={(e) => handleNavClick(e, "projects", "/home")}
-            >
-              Projects
-            </Typography>
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="/home#contact"
-              color="inherit"
-              className="navButton"
-              onClick={(e) => handleNavClick(e, "contact", "/home")}
-            >
-              Contact
-            </Typography>
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="/blog"
-              color="inherit"
-              className="navButton"
-              sx={{ display: { xs: "none", sm: "none" } }} // NOTE: This is a stop gap until I implement the page
-            >
-              Etc.
-            </Typography>
-            <IconButton
-              component="a"
-              href="https://www.linkedin.com/in/alex-tanth/"
-            >
-              <LinkedIn sx={{ color: "secondary.contrastText" }} />
-            </IconButton>
-            <IconButton
-              component="a"
-              href="https://github.com/AlexTanthiptham/"
-            >
-              <GitHub sx={{ color: "secondary.contrastText" }} />
-            </IconButton>
+            <NavBarMobile />
+            <NavBarDesktop />
           </Box>
         </Toolbar>
       </Container>

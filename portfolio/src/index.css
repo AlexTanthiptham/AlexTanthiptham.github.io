@@ -19,28 +19,28 @@ html {
 body {
   font-size: 16px;
   margin: 0;
-  font-family: "Inika", serif;
+  font-family: "EB Garamond", serif;
   font-weight: 400;
   font-style: normal;
 }
 
 h1 {
   font-size: 20vmin;
-  font-family: "Italiana", sans-serif;
+  font-family: "EB Garamond", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 h2 {
   font-size: 5vmin;
-  font-family: "Italiana", sans-serif;
+  font-family: "EB Garamond", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 h3 {
   font-size: 3vmin;
-  font-family: "Inika", sans-serif;
+  font-family: "EB Garamond", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -59,6 +59,12 @@ h3 {
 
 .italiana-regular {
   font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.EBgaramond-regular {
+  font-family: "EB Garamond", sans-serif;
   font-weight: 400;
   font-style: normal;
 }

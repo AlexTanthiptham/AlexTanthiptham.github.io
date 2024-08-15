@@ -54,7 +54,7 @@ const SectionContacts = () => {
             },
           }}
         >
-          <Typography variant="body1" className="textInika" align="center">
+          <Typography variant="body1" className="fontPrimary" align="center">
             Let's talk! I'm reachable at jt20@illinois.edu or through the form
             below.
           </Typography>
@@ -64,7 +64,7 @@ const SectionContacts = () => {
               label="Your Name"
               name="user_name"
               fullWidth={true}
-              className="textInika inputField"
+              className="fontPrimary inputField"
               required={true}
               color="secondary"
             />
@@ -73,7 +73,7 @@ const SectionContacts = () => {
               name="user_email"
               label="Your Email Address"
               fullWidth={true}
-              className="textInika inputField"
+              className="fontPrimary inputField"
               required={true}
               color="secondary"
             />
@@ -82,7 +82,7 @@ const SectionContacts = () => {
               name="message"
               label="Your Message"
               fullWidth={true}
-              className="textInika inputField"
+              className="fontPrimary inputField"
               required={true}
               color="secondary"
               multiline
