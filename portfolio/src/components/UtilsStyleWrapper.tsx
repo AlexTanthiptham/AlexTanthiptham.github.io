@@ -7,6 +7,8 @@ interface StyleWrapperProps {
 // Wrapper for applying frequently used CSS styled classes to different components.
 // Do not apply any styles to this component directly. Only use this to hold classes.
 
+// Overhaul this system - it's far from ideal
+
 const StyleWrapper: React.FC<StyleWrapperProps> = ({ children }) => {
   return (
     <Box
@@ -24,16 +26,16 @@ const StyleWrapper: React.FC<StyleWrapperProps> = ({ children }) => {
         ".textUnderline": {
           textDecoration: "underline",
         },
-        ".textInika": {
+        ".fontPrimary": {
           color: "primary.contrastText",
-          fontFamily: "Inika",
+          fontFamily: "EB Garamond",
         },
-        ".textItaliana": {
+        ".fontSecondary": {
           color: "primary.contrastText",
           fontFamily: "Italiana",
         },
         ".sectionHeader": {
-          fontFamily: "Inika",
+          fontFamily: "EB Garamond",
           color: "primary.contrastText",
           fontWeight: 400,
           paddingBottom: 1,

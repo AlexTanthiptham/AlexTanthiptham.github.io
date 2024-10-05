@@ -1,5 +1,7 @@
 import { createTheme } from "@mui/material/styles";
 
+// Currently unused and unimplemented - to be updated in the future for light/dark mode
+
 const theme = createTheme({
   components: {
     MuiCssBaseline: {
@@ -16,10 +18,10 @@ const theme = createTheme({
           fontWeight: 400,
           textDecoration: "none",
         },
-        ".textInika": {
+        ".fontPrimary": {
           fontFamily: "Inika",
         },
-        ".textItaliana": {
+        ".textPrimary": {
           fontFamily: "Italiana",
         },
         ".sectionHeader": {

@@ -19,7 +19,7 @@ const SectionProjects = () => {
         </Typography>
         <Typography
           variant="body1"
-          className="textInika"
+          className="fontPrimary"
           align="center"
           sx={{ marginBottom: 2 }}
         >
@@ -152,19 +152,22 @@ const ProjectTile: React.FC<ProjectTileProps> = ({
             textWrap: "wrap",
           }}
         >
-          <Typography variant="h4" className="textInika textBold textSecondary">
+          <Typography
+            variant="h4"
+            className="fontPrimary textBold textSecondary"
+          >
             {title}
           </Typography>
-          <Typography variant="h6" className="textInika textSecondary">
+          <Typography variant="h6" className="fontPrimary textSecondary">
             {description}
           </Typography>
           <Typography
             variant="body2"
-            className="textInika textSecondary textUnderline textBold"
+            className="fontPrimary textSecondary textUnderline textBold"
           >
             Tags:
           </Typography>
-          <Typography variant="body2" className="textInika textSecondary">
+          <Typography variant="body2" className="fontPrimary textSecondary">
             {tags.join(", ")}
           </Typography>
         </Box>

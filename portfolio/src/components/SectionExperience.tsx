@@ -82,18 +82,26 @@ const ExperienceContainer: React.FC<ExperienceContainerProps> = ({
         py: "0.5rem",
       }}
     >
-      <Typography variant="h5" className="textBold textInika">
+      <Typography variant="h5" className="textBold fontPrimary">
         {title}
       </Typography>
       <Box display="flex" flexDirection="row">
-        <Typography variant="h6" className="textRegular textInika" flexGrow={1}>
+        <Typography
+          variant="h6"
+          className="textRegular fontPrimary"
+          flexGrow={1}
+        >
           {location}
         </Typography>
-        <Typography variant="h6" className="textRegular textInika" flexGrow={0}>
+        <Typography
+          variant="h6"
+          className="textRegular fontPrimary"
+          flexGrow={0}
+        >
           {date}
         </Typography>
       </Box>
-      <Typography variant="body1" className="textRegular textInika">
+      <Typography variant="body1" className="textRegular fontPrimary">
         {description.map((item, index) => (
           <React.Fragment key={index}>
             {"‣ "} {item}
