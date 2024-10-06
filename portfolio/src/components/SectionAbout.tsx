@@ -1,5 +1,5 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
-import { ContactPage } from "@mui/icons-material/";
+import { ContactPage, Email } from "@mui/icons-material/";
 
 import StyleWrapper from "./UtilsStyleWrapper";
 
@@ -92,27 +92,35 @@ const SectionAbout = () => {
                   color="primary"
                   endIcon={<ContactPage />}
                   type="button"
+                  className="fontPrimary textRegular textSecondary"
                   sx={{
                     justifyContent: "center",
                     alignItems: "center",
+                    marginRight: "1vw",
                   }}
                 >
                   My Resume
                 </Button>
               </a>
-              <Button
-                id="aboutButtonResume"
-                variant="outlined"
-                color="primary"
-                endIcon={<ContactPage />}
-                type="button"
-                sx={{
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
+              <a
+                href="mailto:jt20@illinois.edu"
+                style={{ textDecoration: "none" }}
               >
-                My Resume
-              </Button>
+                <Button
+                  id="aboutButtonResume"
+                  variant="outlined"
+                  color="primary"
+                  endIcon={<Email />}
+                  type="button"
+                  className="fontPrimary textRegular textSecondary"
+                  sx={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  jt20@illinois.edu
+                </Button>
+              </a>
             </Grid>
           </Grid>
         </Container>

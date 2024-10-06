@@ -27,11 +27,9 @@ const StyleWrapper: React.FC<StyleWrapperProps> = ({ children }) => {
           textDecoration: "underline",
         },
         ".fontPrimary": {
-          color: "primary.contrastText",
           fontFamily: "EB Garamond",
         },
         ".fontSecondary": {
-          color: "primary.contrastText",
           fontFamily: "Italiana",
         },
         ".sectionHeader": {
