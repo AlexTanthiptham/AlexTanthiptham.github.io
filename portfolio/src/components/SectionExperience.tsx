@@ -11,9 +11,20 @@ const SectionExperience = () => {
           Experience
         </Typography>
         <ExperienceContainer
+          title="Packaging Engineer"
+          location="Product Support and Logistics Department at Caterpillar Inc"
+          date="August 2024 - Present"
+          description={[
+            "Design and implement packaging procedures for Caterpillar’s global Machine Parts Network to improve operational efficiency, international distribution, cost efficiency and product quality control",
+            "Worked closely with warehouse operations teams to identify and implement possible process improvements to improve safety, efficiency and cost effectiveness of packaging operations",
+            "Coordinated with key stakeholders across Caterpillar’s global teams (China, India, UK)  to align on packaging and logistics goals, improving quality during transport and reducing carrying and labor costs across the global Machine Parts Network",
+            "Developed and maintained an issue reporting Microsoft PowerApp for the Midwest Logistics Center, enhancing communication and traceability of issues and requests",
+          ]}
+        />
+        <ExperienceContainer
           title="Software Engineer"
           location="CPSIL at University of Illinois at Urbana-Champaign"
-          date="December 2023 - Present"
+          date="December 2023 - July 2024"
           description={[
             "The Cyberphysical Systems Integration Lab (CPSIL), led by Professor Lui Sha and doctoral candidate Simon Yu, is a research group dedicated to enhancing the safety and robustness of next-generation autonomous vehicles.",
             "Engineered PyTorch-based ensemble networks to improve traffic sign classification accuracy of multitask learning and multi-layer perceptron networks by 7.96% and reduce loss of accuracy against ImageNet-C attacks by up to 17.83%.",

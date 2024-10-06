@@ -77,11 +77,11 @@ const UtilsTopNav = () => {
       <Box
         id="navbarDesktopLinks"
         sx={{
-          flexGrow: { xs: 1, sm: 0 },
+          flexGrow: { xs: 1, sm: 0 }, // NOTE: Hamburger menu is WIP.
           alignItems: "center",
           justifyContent: "space-evenly",
           gap: 2,
-          display: { xs: "none", sm: "flex" },
+          display: { xs: "flex", sm: "flex" }, // NOTE: Hamburger menu is WIP. Set xs to none to enable.
         }}
       >
         <Typography
@@ -149,7 +149,7 @@ const UtilsTopNav = () => {
           component="a"
           onClick={handleModalOpen}
           sx={{
-            display: { xs: "block", sm: "none" },
+            display: { xs: "none", sm: "none" }, // NOTE: Stop gap. Set xs to block to enable hamburger menu
             color: "secondary.contrastText",
             flexGrow: 0,
             alignItems: "center",
