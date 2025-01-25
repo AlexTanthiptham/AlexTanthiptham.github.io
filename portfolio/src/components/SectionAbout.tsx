@@ -103,7 +103,7 @@ const SectionAbout = () => {
                 </Button>
               </a>
               <a
-                href="mailto:jt20@illinois.edu"
+                href="mailto:me@alextanth.com"
                 style={{ textDecoration: "none" }}
               >
                 <Button
@@ -118,7 +118,7 @@ const SectionAbout = () => {
                     alignItems: "center",
                   }}
                 >
-                  jt20@illinois.edu
+                  me@alextanth.com
                 </Button>
               </a>
             </Grid>
