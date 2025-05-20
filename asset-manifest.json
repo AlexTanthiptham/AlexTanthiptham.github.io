@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.8821ec1d.css",
-    "main.js": "/static/js/main.07b6e256.js",
+    "main.js": "/static/js/main.e2979619.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
+    "static/media/project-tagalong-alt.png": "/static/media/project-tagalong-alt.f9c2b4dde562beed434a.png",
     "static/media/project-visat.png": "/static/media/project-visat.1d2272f6a4bcef16e570.png",
     "static/media/project-biped.png": "/static/media/project-biped.133e4e356bf4169f9d65.png",
     "static/media/project-illinialert.png": "/static/media/project-illinialert.f7f06221302d5a3e4d0a.png",
@@ -11,14 +12,13 @@
     "static/media/doc-resume.pdf": "/static/media/doc-resume.1ae61abdf12ac34d4f78.pdf",
     "static/media/project-llamabear.png": "/static/media/project-llamabear.ee83762d03e095485177.png",
     "static/media/roadworks.png": "/static/media/roadworks.64c7c728f42378021884.png",
-    "static/media/project-tagalong.png": "/static/media/project-tagalong.f16c44a9d7ea9156fd07.png",
     "index.html": "/index.html",
     "main.8821ec1d.css.map": "/static/css/main.8821ec1d.css.map",
-    "main.07b6e256.js.map": "/static/js/main.07b6e256.js.map",
+    "main.e2979619.js.map": "/static/js/main.e2979619.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8821ec1d.css",
-    "static/js/main.07b6e256.js"
+    "static/js/main.e2979619.js"
   ]
 }
